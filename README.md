@@ -19,3 +19,48 @@ automation-data-python/
 │ └── transform.py
 ├── utils/ # fonctions utilitaires
 └── README.md
+
+---
+
+## 🚀 Fonctionnalités
+
+- Import de données CSV / API  
+- Nettoyage (drop, rename, formatage)  
+- Transformations simples (groupby, merge, filtrage)  
+- Export CSV + rapport  
+- Exécution en script unique
+
+---
+
+## 🛠️ Technologies
+
+- Python 3  
+- pandas  
+- requests  
+- pathlib  
+
+---
+
+## ▶️ Lancer le projet
+
+```bash
+pip install -r requirements.txt
+python scripts/transform.py
+
+---
+
+📈 **Améliorations prévues**
+
+Ajout d’un graphe simple (matplotlib)
+
+Possibilité d’ajouter une API source
+
+Interface CLI plus propre
+
+---
+
+📬 **Contact**
+
+Email : à compléter
+
+LinkedIn : à compléter
