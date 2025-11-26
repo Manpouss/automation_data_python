@@ -12,3 +12,10 @@ L’objectif : montrer comment automatiser des tâches manuelles récurrentes (r
 
 ## 📂 Structure
 
+automation-data-python/
+├── data/ # fichiers d'entrée
+├── output/ # résultats transformés
+├── scripts/ # logique Python
+│ └── transform.py
+├── utils/ # fonctions utilitaires
+└── README.md
