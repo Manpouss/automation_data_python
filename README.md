@@ -49,18 +49,14 @@ python scripts/transform.py
 
 ---
 
-📈 **Améliorations prévues**
+## 📈 Améliorations prévues
 
-Ajout d’un graphe simple (matplotlib)
-
-Possibilité d’ajouter une API source
-
-Interface CLI plus propre
-
+- Ajout d’un graphe simple (matplotlib)
+- Possibilité d’ajouter une API source
+- Interface CLI plus propre
 ---
 
-📬 **Contact**
+## 📬 Contact
 
-Email : à compléter
-
-LinkedIn : à compléter
+Email : diawaramantcha@gmail.com
+LinkedIn : @mantcha-diawara
