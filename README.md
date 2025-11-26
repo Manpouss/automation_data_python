@@ -12,6 +12,7 @@ L’objectif : montrer comment automatiser des tâches manuelles récurrentes (r
 
 ## 📂 Structure
 
+```
 automation-data-python/
 ├── data/ # fichiers d'entrée
 ├── output/ # résultats transformés
@@ -19,7 +20,7 @@ automation-data-python/
 │ └── transform.py
 ├── utils/ # fonctions utilitaires
 └── README.md
-
+```
 ---
 
 ## 🚀 Fonctionnalités
@@ -43,10 +44,11 @@ automation-data-python/
 
 ## ▶️ Lancer le projet
 
+```md
 ```bash
 pip install -r requirements.txt
 python scripts/transform.py
-
+```
 ---
 
 ## 📈 Améliorations prévues
@@ -54,9 +56,10 @@ python scripts/transform.py
 - Ajout d’un graphe simple (matplotlib)
 - Possibilité d’ajouter une API source
 - Interface CLI plus propre
+
 ---
 
 ## 📬 Contact
 
-Email : diawaramantcha@gmail.com
-LinkedIn : @mantcha-diawara
+- Email : diawaramantcha@gmail.com
+- LinkedIn : @mantcha-diawara
