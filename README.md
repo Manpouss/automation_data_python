@@ -1,39 +1,42 @@
 # 🐍 Automation – Extraction & Transformation de données (Python)
 
-Ce projet démontre une pipeline Python simple permettant :
+Ce projet présente une mini-pipeline Python permettant d’automatiser des tâches de traitement de données.
+Il montre comment :
+- **extraire** des données (CSV, API ou fichiers bruts)
+- **nettoyer** et **transformer** les données (pandas)
+- **exporter** un fichier propre ou un rapport prêt à l’usage
 
-- la **récupération** de données (CSV, API ou fichiers bruts),
-- le **nettoyage et la transformation** (pandas),
-- l’**export** d’un fichier propre ou d’un petit rapport.
-
-L’objectif : montrer comment automatiser des tâches manuelles récurrentes (reporting, nettoyage de fichiers, consolidation…).
+**🎯 Objectif** : automatiser des tâches manuelles récurrentes (reporting, nettoyage de fichiers, consolidation…).
 
 ---
 
-## 📂 Structure
+## 📂 Structure du projet
 
 ```
 automation-data-python/
-├── data/ # fichiers d'entrée
-├── output/ # résultats transformés
-├── scripts/ # logique Python
+├── data/             # Fichiers d'entrée
+├── output/           # Résultats transformés
+├── scripts/          # Logique Python
 │ └── transform.py
-├── utils/ # fonctions utilitaires
+├── utils/            # Fonctions utilitaires (Lecture, formatage, logs,...)
 └── README.md
 ```
 ---
 
 ## 🚀 Fonctionnalités
 
-- Import de données CSV / API  
-- Nettoyage (drop, rename, formatage)  
-- Transformations simples (groupby, merge, filtrage)  
+- Import de données **CSV** ou **API** 
+- Nettoyage automatique (drop, rename, formatage)  
+- Transformations simples 
+    - GroupBy
+    - Merge
+    - Filtrage dynamique
 - Export CSV + rapport  
-- Exécution en script unique
+- Exécution en **script unique** (automatisation simple)
 
 ---
 
-## 🛠️ Technologies
+## 🛠️ Technologies utilisées
 
 - Python 3  
 - pandas  
@@ -46,6 +49,7 @@ automation-data-python/
 
 ```md
 ```bash
+
 pip install -r requirements.txt
 python scripts/transform.py
 ```
@@ -53,9 +57,10 @@ python scripts/transform.py
 
 ## 📈 Améliorations prévues
 
-- Ajout d’un graphe simple (matplotlib)
-- Possibilité d’ajouter une API source
-- Interface CLI plus propre
+- Ajout d'un graphique simple (matplotlib)
+- Possibilité d’utiliser une API source configurable
+- Interface CLI plus propre (click / argparse)
+- Création d'une version modulable pour enchaîner plusieurs transformations
 
 ---
 
