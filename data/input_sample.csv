@@ -1,5 +1,5 @@
-id,name,age
-1,Alice,30
-2,Bob,28
-3,,25
-4,David,35
+client,category,amount
+Client A,Formation,500
+Client A,Formation,200
+Client B,Audit,300
+Client C,Maintenance,400
