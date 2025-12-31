@@ -2,12 +2,12 @@
 
 Toutes les modifications notables de ce projet seront documentées dans ce fichier.
 
-Le format est inspiré de [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/)
+Le format est inspiré de [Keep a Changelog](https://keepachangelog.com/fr/v1.0.0/)
 et ce projet suit le versionnement sémantique (SemVer).
 
 ---
 
-## [1.0.0] - 2025-12-17
+## [v1.0.0] - 2025-12-17
 
 ### Added
 - Pipeline Python d’automatisation des données (extraction → nettoyage → transformation → export)

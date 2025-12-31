@@ -77,17 +77,22 @@ def transform_data(df: pd.DataFrame, logger: logging.Logger) -> pd.DataFrame:
     return df
 
 
-def save_outputs(clean_df: pd.DataFrame, report_df: pd.DataFrame, outdir: Path, logger: logging.Logger) -> None:
+def save_outputs(clean_df, report_df, outdir, logger, sep=",", export_excel=False) -> None:
     outdir.mkdir(parents=True, exist_ok=True)
 
     cleaned_path = outdir / "cleaned.csv"
     report_path = outdir / "report.csv"
-
+    
     logger.info(f"Saving cleaned dataset to: {cleaned_path}")
-    clean_df.to_csv(cleaned_path, index=False)
+    clean_df.to_csv(cleaned_path, index=False, sep=sep)
 
     logger.info(f"Saving report to: {report_path}")
-    report_df.to_csv(report_path, index=False)
+    report_df.to_csv(report_path, index=False, sep=sep)
+
+    if export_excel:
+        xlsx_path = outdir / "report.xlsx"
+        logger.info(f"Saving Excel report to: {xlsx_path}")
+        report_df.to_excel(xlsx_path, index=False)
 
     logger.info("Outputs saved successfully.")
 
@@ -116,6 +121,19 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Enable debug logs"
     )
+    parser.add_argument(
+    "--excel",
+    action="store_true",
+    help="Also export the report as an Excel .xlsx file"
+    )
+
+    parser.add_argument(
+        "--sep",
+        type=str,
+        default=",",
+        help="CSV separator (default: ','). Use ';' for Excel FR."
+    )
+
     return parser.parse_args()
 
 
@@ -130,7 +148,7 @@ def main() -> int:
         df_raw = load_csv(input_path, logger)
         df_clean = clean_data(df_raw, logger)
         df_report = transform_data(df_clean, logger)
-        save_outputs(df_clean, df_report, outdir, logger)
+        save_outputs(df_clean, df_report, outdir, logger, sep=args.sep, export_excel=args.excel)
 
         logger.info("Pipeline finished ✅")
         return 0
